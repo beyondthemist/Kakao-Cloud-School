@@ -61,9 +61,9 @@ fi
 # AWS configuration
 REGION="ap-northeast-2"
 sleep 1
-aws configure set aws_access_key_id AKIA2MTTUWBTLXHWR6Y3
+aws configure set aws_access_key_id 
 sleep 1
-aws configure set aws_secret_access_key RFXIe7EdD0KevPMXBR3MB5WPCvM3govP+4tui11E
+aws configure set aws_secret_access_key 
 sleep 1
 aws configure set region ${REGION}
 sleep 1
