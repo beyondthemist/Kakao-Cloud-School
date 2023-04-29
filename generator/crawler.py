@@ -5,14 +5,14 @@ from random import shuffle
 
 class Crawler:
     '''
-    크롤링함
+    더미 데이터 생성을 위해 회사 이름 또는 회사 로고 URL을 크롤링한다.
     '''
 
     def __init__(self, length: int) -> None:
         '''
         Parameters
         ----------
-        size: int
+        length: int
             크롤링 후 반환할 데이터의 갯수
         '''
         self.__length = length
