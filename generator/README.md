@@ -5,7 +5,8 @@
 <br>
 
 # 사용법
-```
+```python
+# main.py
 generator = Generator(length=200, code=Generator.ALL, format=Generator.JSON)
 generator.generate()
 print('Saved.' if generator.save() else 'Not saved.')
