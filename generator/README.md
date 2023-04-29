@@ -1,6 +1,7 @@
 # Data generator
-[data dictionary](#data-dictionary)에 맞게 데이터를 생성한다.
+[Data dictionary](#data-dictionary)에 맞게 데이터를 생성한다.
 개인 프로젝트용으로 채용 공고 API를 제공하는 곳이 없어 데이터 생성기 사용이 불가피했다.
+<br>
 
 # 사용법
 ```
@@ -12,6 +13,7 @@ print('Saved.' if generator.save() else 'Not saved.')
 - `code`: 생성할 컬럼. `Generator` 클래스의 상수로 지정한다. `ALL`로 설정하면 모든 컬럼의 데이터를 생성한다.
 - `format`: 생성한 데이터를 저장할 형식. .json, .xlsx, .csv로 저장할 수 있다.
 
+<br>
 
 # Data dictionary
 |Column|Value|Type|
