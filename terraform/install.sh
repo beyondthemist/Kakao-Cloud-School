@@ -1,5 +1,3 @@
-#!bin/sh
-
 # update
 sudo apt -y update
 sleep 3
