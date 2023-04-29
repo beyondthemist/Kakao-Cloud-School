@@ -1,5 +1,5 @@
 # Data generator
-아래 data dictionary에 맞게 데이터를 생성한다.
+[data dictionary](#data-dictionary)에 맞게 데이터를 생성한다.
 개인 프로젝트용으로 채용 공고 API를 제공하는 곳이 없어 데이터 생성기 사용이 불가피했다.
 
 # 사용법
