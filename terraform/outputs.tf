@@ -3,16 +3,6 @@ output "cluster_endpoint" {
   value       = module.eks.cluster_endpoint
 }
 
-/*
-output "vpc_id" {
-  value = module.vpc.vpc_id
-}
-
-output "public_subnet_id" {
-  desciption = 
-  value = module.vpc.public_subnets.this[0]
-}
-*/
 output "cluster_security_group_id" {
   description = "Security group ids attached to the cluster control plane"
   value       = module.eks.cluster_security_group_id
@@ -33,12 +23,6 @@ output "bastion_sg_id" {
   value = aws_security_group.bastion_sg.id
 }
 
-/*
-output "s3_bucket_id" {
-    description = "S3 Bucket"
-    value = module.s3_bucket.s3_bucket_id
-}
-*/
 
 output "s3_bucket_id" {
   description = "source bucket"
