@@ -46,6 +46,7 @@ Velero에 관한 소개는 아래에 서술되어 있다.
 - `Backup`과 `BackupController`는 `velero install` 시 등록되는 CRD; Custom Resource Defined다.
 
 ### **[How Velero restores](https://velero.io/docs/v1.10/how-velero-works/#restore-workflow)**
+#### 사용자가 `velero restore create`를 실행하면
 1. Velero client는 `Restore` object를 생성하기 위해 Kubernetes API로 요청한다.
 2. `RestoreController`는 `Restore` object를 식별하고 validation을 수행한다.
 3. `RestoreController`는 object storage service로부터 백업 정보를 가져온다(fetch). 
