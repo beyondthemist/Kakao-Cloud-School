@@ -12,7 +12,7 @@ print('Saved.' if generator.save() else 'Not saved.')
 ```
 - `length`: 생성할 record 수
 - `code`: 생성할 컬럼. `Generator` 클래스의 상수로 지정한다. `ALL`로 설정하면 모든 컬럼의 데이터를 생성한다.
-- `format`: 생성한 데이터를 저장할 형식. .json, .xlsx, .csv로 저장할 수 있다.
+- `format`: 생성한 데이터를 저장할 형식. `.json`, `.xlsx`, `.csv`로 저장할 수 있다.
 
 <br>
 
