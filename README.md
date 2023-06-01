@@ -65,7 +65,3 @@ Velero는 각 resource에서 preferred version의 Kubernetes API server를 사�
 이 때 `gizmos`가 복원되려면 target cluster는 반드시 `things/v1` API endpoint를 갖고 있어야 한다. 주의할 점은 `things/v1`이 target cluster의 preferrd version일 필요는 없다는 것. `things/v1` API endpoint가 그냥 존재하기만 하면 된다.
 
 전처리는 백업된 API version을 사용해 복원할 resource가 target cluster에서 동작할 수 있는지 검증(verify)하는, 즉 백업된 API version의 endpoint가 target cluster에 존재하는지 확인하는 작업을 말한다.
-<br>
-
-# Workbook
-Velero를 사용하는 방법은 [여기](https://t0pli.tistory.com/233)를 참조하기 바란다.
