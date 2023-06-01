@@ -68,4 +68,4 @@ Velero는 각 resource에서 preferred version의 Kubernetes API server를 사�
 <br>
 
 # Workbook
-Velero를 사용하는 방법은 [여기](https://github.com/beyondthemist/Kakao-Cloud-School/blob/main/Velero-workbook.md)를 참조하기 바란다.
+Velero를 사용하는 방법은 [여기](https://t0pli.tistory.com/233)를 참조하기 바란다.
