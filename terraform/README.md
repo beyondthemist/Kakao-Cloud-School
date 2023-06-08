@@ -16,4 +16,3 @@ resources/
 
 - `main.tf`
 provider와 VPC를 정의한다.
-- bastion.tf
