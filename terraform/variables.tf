@@ -7,7 +7,7 @@ variable "region" {
 variable "cluster_name" {
   description = "EKS cluster name"
   type        = string
-  default     = "terraform-eks"
+  default     = "{{YOUR_CLUSTER_NAME}}"
 }
 
 variable "db_instance_name" {
@@ -50,12 +50,12 @@ variable "db_username" {
   description = "User name to connect to DB instance"
   type        = string
   sensitive   = true
-  default     = "root"
+  default     = "{{YOUR_USERNAME}}"
 }
 
 variable "db_password" {
   description = "RDS root user password"
   type        = string
   sensitive   = true
-  default     = "password"
+  default     = "{{YOUR_PASSWORD}}"
 }
