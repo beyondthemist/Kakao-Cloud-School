@@ -57,7 +57,7 @@ else
 fi
 
 # AWS configuration
-REGION="ap-northeast-2"
+REGION="{{YOUR_REGION}}"
 sleep 1
 aws configure set aws_access_key_id {{YOUR_AWS_ACCESS_KEY_ID}}
 sleep 1
@@ -67,7 +67,7 @@ aws configure set region ${REGION}
 sleep 1
 
 # update kubernetes context
-aws eks update-kubeconfig --region ap-northeast-2 --name terraform-eks
+aws eks update-kubeconfig --region ${REGION} --name terraform-eks
 sleep 2
 
 # velero
@@ -79,7 +79,7 @@ tar -xvf velero-v1.10.2-linux-amd64.tar.gz
 sleep 5
 sudo mv velero-v1.10.2-linux-amd64/velero /usr/local/sbin
 sleep 5
-BUCKET="source-seoul-s3-bucket"
+BUCKET="{{YOUR_BUCKET_NAME}}"
 sleep 1
 velero install \
     --provider aws \
@@ -97,21 +97,21 @@ sudo curl -ssL https://get.docker.com/ | bash
 sleep 5
 
 # ecr login
-ACCOUNT=236747833953
+ACCOUNT={{YOUR_ACCOUNT}}
 sleep 1
-REGION=ap-northeast-2
+REGION={{YOUR_REGION}}
 sleep 1
-SECRET_NAME=${REGION}-ecr-secret
+SECRET_NAME={{YOUR_SECRET_NAME}}
 sleep 1
-EMAIL=mega@coffee.com
+EMAIL={{YOUR_EMAIL}}
 sleep 1
 TOKEN=`aws ecr --region=$REGION get-authorization-token --output text --query authorizationData[].authorizationToken | base64 -d | cut -d: -f2`
 sleep 1
 kubectl create secret docker-registry $SECRET_NAME \
     --docker-server=https://${ACCOUNT}.dkr.ecr.${REGION}.amazonaws.com \
-    --docker-username=AWS \
+    --docker-username={{YOUR_USERNAME}} \
     --docker-password="${TOKEN}" \
     --docker-email="${EMAIL}"
 sleep 5
-aws ecr get-login-password --region ${REGION} | sudo docker login --username AWS --password-stdin ${ACCOUNT}.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ${REGION} | sudo docker login --username AWS --password-stdin ${ACCOUNT}.dkr.ecr.${REGION}.amazonaws.com
 sleep 5
