@@ -29,6 +29,6 @@ Velero에 관한 소개는 아래에 서술되어 있다.
 - Cluster resource에 대한 migration이 가능하다.
 - production cluster를 development cluster와 testing cluster로 복제할 수 있다.
 
-다만 본 프로젝트에서는 사실상 첫 번째의 장점만을 차용하고 있다.
+본 프로젝트에서는 사실상 첫 번째의 장점만을 차용하고 있다.
 
 Velero의 작동 원리 등은 [여기](https://velog.io/@kirisame/Velero%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4-Amazon-EKS-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EB%B0%B1%EC%97%85%ED%95%98%EA%B8%B0)를 참고하기 바랍니다.
